@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeNet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>SafeNet</h1>
+        <p>
+            Bienvenido a la sección de subida de experiencias.
+        </p>
+        
+    </header>
+
+<nav>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../experiencias/index.html">Experiencias</a></li>
+        <li><a href="../consejos/index.html">Consejos</a></li>
+        <li><a href="../contacto/index.html">Contacto</a></li>
+        <li><a href="index.html">Subir Experiencia</a></li>
+    </ul>
+</nav>
+
+    <section>
+
+        <h2>Comparte tu experiencia</h2>
+
+        <p>
+            Tu historia puede ayudar a otras personas que estén pasando por situaciones
+            de ciberacoso o problemas similares.
+        </p>
+
+        <fieldset>
+
+            <legend><strong>Formulario de Testimonio</strong></legend>
+
+            <!-- FORMULARIO -->
+
+            <form id="formulario">
+
+                <p>
+                    <label for="nombre"><strong>Nombre o Apodo:</strong></label><br>
+                    <input type="text" id="nombre" placeholder="Ejemplo: Usuario123" required>
+                </p>
+
+                <p>
+                    <label for="email"><strong>Correo electrónico:</strong></label><br>
+                    <input type="email" id="email" placeholder="ejemplo@gmail.com" required>
+                </p>
+
+                <p>
+                    <label for="tipo"><strong>Tipo de problema:</strong></label><br>
+
+                    <select id="tipo">
+
+                        <option>Ciberbullying</option>
+                        <option>Cyberacoso</option>
+                        <option>Suplantación de identidad</option>
+                        <option>Estafa en línea</option>
+                        <option>Otro</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="experiencia"><strong>Cuéntanos tu experiencia:</strong></label><br>
+
+                    <textarea
+                        id="experiencia"
+                        rows="8"
+                        cols="50"
+                        placeholder="Escribe aquí tu experiencia..."
+                        required>
+                    </textarea>
+                </p>
+
+                <p>
+                    <label>
+                        <input type="checkbox" required>
+                        Acepto compartir mi experiencia con la comunidad.
+                    </label>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar experiencia</button>
+
+                    <button type="reset">Limpiar</button>
+
+                    <button type="button" onclick="borrarTodo()">
+                        Reiniciar Demo
+                    </button>
+                </p>
+
+                <p id="mensaje"></p>
+
+            </form>
+
+        </fieldset>
+
+    </section>
+
+    <hr>
+
+    <!-- EXPERIENCIAS -->
+
+    <section>
+
+        <h2>Experiencias recientes</h2>
+
+        <div id="lista-experiencias"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 yisusdeveloper. todos lo derechos reservados</p>
+
+</body>
+</html>
